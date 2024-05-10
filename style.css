@@ -1,0 +1,386 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Noto Sans JP", sans-serif;
+  line-height: 1.7em;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+p {
+  margin: 10px 0;
+}
+
+.lead-heading {
+  font-size: 20px;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  overflow: auto;
+  padding: 0 20px;
+}
+
+.btn {
+  background: black;
+  padding: 13px 25px;
+  color: white;
+  border-radius: 10px;
+  display: inline-block;
+}
+.btn:hover {
+  background: lightgray;
+  color: black;
+}
+
+.btn-light {
+  background: white;
+  color: black;
+}
+
+
+
+.crl {
+  clear: both;
+}
+
+/* NAVBAR SECTION */
+nav {
+  background: radial-gradient(
+    circle farthest-corner at 17.1% 22.8%,
+    rgba(226, 24, 24, 1) 0%,
+    rgba(160, 6, 6, 1) 90%
+  );
+  overflow: auto;
+}
+
+nav a {
+  color: white;
+}
+nav h1 {
+  float: left;
+  padding-top: 20px;
+}
+
+nav ul {
+  float: right;
+  list-style: none;
+  font-size: 20px;
+}
+nav ul li {
+  float: left;
+}
+
+nav ul li a {
+  display: block;
+  padding: 20px;
+  text-align: center;
+
+  &:hover {
+    color: lightgray;
+    text-decoration: underline;
+    text-underline-offset: 1rem;
+    text-decoration-color: rgb(181, 181, 181);
+  }
+}
+
+.logo {
+  font-size: 40px;
+}
+
+.text-primary {
+  color: #b31217;
+}
+
+/* SHOWCASE */
+
+#showcase {
+  height: 92dvh;
+}
+.home {
+  background: url("./img/place-6.webp") no-repeat center center/cover;
+}
+
+.booking {
+  background: url("./img/snow-1.webp") no-repeat center center/cover;
+}
+
+.about {
+  background: url("./img/flower-1.webp") no-repeat center center/cover;
+}
+
+/*home*/
+#showcase .showcase-content {
+  color: black;
+  text-align: center;
+  padding: 180px;
+}
+
+#showcase .showcase-content h1 {
+  font-size: 60px;
+  line-height: 1.2em;
+  padding-bottom: 20px;
+}
+
+#showcase .showcase-content h2 {
+  font-size: 20px;
+  line-height: 1.2em;
+}
+
+#showcase .showcase-content p {
+  padding-bottom: 30px;
+  line-height: 1.2em;
+  font-size: 20px;
+}
+
+/* SECTION*/
+#home1 {
+  height: 400px;
+}
+#home2 {
+  height: 400px;
+}
+
+#home1 .info-content-1 {
+  width: 50%;
+  height: 100%;
+  float: left;
+  text-align: center;
+  padding: 10% 10%;
+}
+#home2 .info-content-2 {
+  width: 50%;
+  height: 100%;
+  float: right;
+  text-align: center;
+  padding: 5% 10%;
+}
+
+
+#home1 .info-content-1 h3 {
+  font-size: 25px;
+  text-align: center;
+  padding: 25px 25px;
+}
+#home2 .info-content-2 h3 {
+  font-size: 25px;
+  text-align: center;
+  padding: 25px 25px;
+}
+
+#home1 .info-img1 {
+  float: right;
+  width: 50%;
+  min-height: 100%;
+  margin-top: 2%;
+  background: url("./img/place-3.webp") no-repeat center/cover;
+}
+#home2 .info-img2 {
+  float: left;
+  width: 50%;
+  min-height: 100%;;
+  background: url("./img/snow-1.webp") no-repeat center/cover;
+}
+
+#home1 .info-content p {
+  font-size: 20px;
+  text-align: center;
+}
+#home2 .info-content p {
+  font-size: 20px;
+  text-align: center;
+}
+
+#service {
+padding: 5%;
+}
+.service {
+  text-align: center;
+  padding: 10%;
+}
+/* ABOUT section */
+/*review*/
+.review {
+  padding: 20px 20px;
+}
+.review .box-review {
+  padding: 10px;
+  text-align: center;
+  box-shadow: 0 1px 1px black;
+  border-radius: 20px;
+}
+
+.review .box-review img {
+  width: 10em;
+  height: 10em;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+.review h1 {
+  font-size: 20px;
+  text-align: center;
+}
+.review .box-review h2 {
+  font-size: 20px;
+}
+.review .box-review p {
+  font-size: 10px;
+}
+/* GALLERY */
+#gallery {
+  padding: 5%;
+}
+
+#gallery h1 {
+  text-align: center;
+  padding-bottom: 5%;
+}
+.colum-gallery {
+  border: 5px solid #ccc;
+  float: left;
+  width: 280px;
+  margin: 30px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  &:hover {
+    border: 1px solid #ffff;
+  }
+}
+
+.colum-gallery img {
+  height: 100%;
+  width: 100%;
+}
+
+/* Booking */
+
+.mg {
+  padding: 5%;
+  background: white;
+}
+.mg h1 {
+  font-family: "Noto Sans JP", sans-serif;
+  font-size: 15px;
+  text-align: center;
+}
+
+
+.table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+
+th, td {
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even){background-color: #f2f2f2}
+
+th {
+  background-color: rgba(160,6,6,1);
+  color: white;
+}
+
+
+
+/*CONTACE SECTION*/
+.contact {
+  height: 80dvh;
+  background: url("./img/fuji-1.webp") no-repeat center center/cover;
+}
+#form {
+  padding-top: 5%;
+}
+#form .form-info .form-group {
+  padding-bottom: 2%;
+  text-align: center;
+}
+
+#form .form-info .form-group label {
+  padding: 12px 10px;
+  display: block;
+  color: lightgray;
+}
+
+#form input {
+  width: 33%;
+  padding: 12px;
+  border: 1 px solid #ccc;
+}
+
+#form textarea {
+  width: 33%;
+  height: 150px;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+#form h1 {
+  padding: 20px;
+  color: lightgray;
+  text-align: center;
+}
+
+button {
+  background-image: linear-gradient(
+    to right,
+    #e52d27 0%,
+    #b31217 51%,
+    #e52d27 100%
+  );
+  margin: 10px auto;
+  padding: 10px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+  border-radius: 10px;
+  display: block;
+
+  &:hover {
+    background-position: right center;
+    color: #fff;
+    text-decoration: none;
+  }
+}
+
+/* FOOTER*/
+footer {
+  margin-top: 2%;
+  text-align: center;
+  padding: 20px;
+  background: radial-gradient(
+    circle farthest-corner at 17.1% 22.8%,
+    rgba(226, 24, 24, 1) 0%,
+    rgba(160, 6, 6, 1) 90%
+  );
+  color: white;
+}
+footer p {
+  margin: 0;
+}
+.text-minor a {
+  color: black;
+  font-size: 12px;
+
+  &:hover {
+    color: lightgray;
+  }
+}
